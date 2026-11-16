@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello 示例插件 · 欲蓝财务</title>
+<link rel="stylesheet" href="../../assets/style.css">
+<style>
+  body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .pg { width: 100%; max-width: 620px; background: var(--surface-2); border: 1px solid var(--hair);
+        border-radius: var(--r-lg); box-shadow: var(--sh-2); padding: clamp(26px, 5vw, 44px); }
+  .pg__badge { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: var(--w-semi);
+        color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px; padding: 5px 12px; }
+  .pg h1 { margin: 18px 0 8px; font-size: clamp(22px, 4vw, 30px); letter-spacing: -.02em; }
+  .pg p { color: var(--ink-2); margin: 0 0 18px; }
+  .pg__ok { border-left: 3px solid var(--accent); background: var(--surface-1); border-radius: var(--r-xs);
+        padding: 12px 16px; margin: 0 0 20px; font-size: 14px; color: var(--ink-2); }
+  .pg ul { margin: 0 0 24px; padding-left: 20px; color: var(--ink-2); font-size: 14px; }
+  .pg li { margin: 5px 0; }
+  .pg__row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pg a.btn { display: inline-flex; align-items: center; padding: 10px 18px; border-radius: var(--r-sm);
+        background: var(--accent); color: #fff; text-decoration: none; font-size: 14px; font-weight: var(--w-semi); }
+  .pg a.btn.ghost { background: transparent; color: var(--ink-1); border: 1px solid var(--hair-2); }
+  code { background: var(--surface-3); border-radius: 5px; padding: 2px 6px; font-size: 13px; }
+</style>
+</head>
+<body>
+  <main class="pg">
+    <span class="pg__badge">● 示例插件 · hello-world v1.0.0</span>
+    <h1>插件装好了 🎉</h1>
+    <p>能看到这一页，说明文件已经正确放进商城的 <code>public/plugins/hello/</code>，而且运行目录指向了 <code>public/</code>。</p>
+
+    <div class="pg__ok"><strong>零侵入示例：</strong>这个插件只新增了一个独立页面，不改任何核心文件、不建表、不需要跑迁移，卸载时直接删掉这个文件夹即可。</div>
+
+    <ul>
+      <li>系统版本：v1.1.0 及以上</li>
+      <li>新增文件：<code>public/plugins/hello/index.html</code></li>
+      <li>需要跑迁移：否</li>
+      <li>需要 bump <code>?v=</code> 版本号：否</li>
+    </ul>
+
+    <div class="pg__row">
+      <a class="btn" href="../../">返回商城首页</a>
+      <a class="btn ghost" href="https://doc.yulancloud.us.ci/plugins/install" target="_blank" rel="noopener">看安装教程</a>
+      <a class="btn ghost" href="https://yulancloud.us.ci/market/" target="_blank" rel="noopener">去插件市场</a>
+    </div>
+  </main>
+</body>
+</html>

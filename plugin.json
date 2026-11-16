@@ -1,0 +1,16 @@
+{
+  "id": "my-plugin",
+  "name": "我的插件",
+  "version": "1.0.0",
+  "author": "你的名字或 GitHub ID",
+  "description": "一句话说清这个插件给商城加了什么功能",
+  "category": "工具",
+  "tags": ["示例"],
+  "icon": "https://你的图标直链.svg",
+  "download": "https://github.com/你的ID/你的仓库/releases/download/v1.0.0/my-plugin-v1.0.0.zip",
+  "homepage": "https://github.com/你的ID/你的仓库",
+  "docs": "https://doc.yulancloud.us.ci/plugins/install",
+  "requires": ">=1.1.0",
+  "build": "20261115a",
+  "updated": "2026-11-15"
+}
